@@ -35,29 +35,29 @@ include('header.php');
               <div class="form-group">
                 <label class="control-label">Movie name</label>
                 <input type="text" name="name" class="form-control"/>
-                <?php $frm->validate("name",array("required","label"=>"Movie Name")); // Validating form using form builder written in form.php ?>
+                <?php $frm->validate("name",array("required","label"=>"Movie Name"));  ?>
               </div>
               <div class="form-group">
                  <label class="control-label">Cast</label>
                 <input type="text" name="cast" class="form-control">
-                <?php $frm->validate("cast",array("required","label"=>"Cast","regexp"=>"text")); // Validating form using form builder written in form.php ?>
+                <?php $frm->validate("cast",array("required","label"=>"Cast","regexp"=>"text"));  ?>
               </div>
               
               <div class="form-group">
                 <label class="control-label">Release Date</label>
                 <input type="date" name="date" class="form-control"/>
-                <?php $frm->validate("date",array("required","label"=>"Release Date")); // Validating form using form builder written in form.php ?>
+                <?php $frm->validate("date",array("required","label"=>"Release Date"));  ?>
               </div>
               
               <div class="form-group">
                 <label class="control-label">Description</label>
                  <input type="text" name="description" class="form-control">
-                 <?php $frm->validate("description",array("required","label"=>"Description")); // Validating form using form builder written in form.php ?>
+                 <?php $frm->validate("description",array("required","label"=>"Description"));  ?>
               </div>
               <div class="form-group">
                   <label class="control-label">Images</label>
               <input type="file"  name="attachment" class="form-control" placeholder="Images">
-               <?php $frm->validate("attachment",array("required","label"=>"Image")); // Validating form using form builder written in form.php ?>
+               <?php $frm->validate("attachment",array("required","label"=>"Image"));  ?>
               </div>
               <div class="form-group">
                 <button class="btn btn-success">Add News</button>

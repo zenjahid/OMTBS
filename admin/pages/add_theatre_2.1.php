@@ -43,10 +43,7 @@ include('header.php');
                     <td>Place</td>
                     <td><?php echo $theatre['place'];?></td>
                 </tr>
-                <tr>
-                    <td>State</td>
-                    <td><?php echo $theatre['state'];?></td>
-                </tr>
+
                 <tr>
                     <td>Pin</td>
                     <td><?php echo $theatre['pin'];?></td>

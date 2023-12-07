@@ -33,28 +33,30 @@ include('header.php');
               <div class="form-group">
                 <label class="control-label">Theatre Name</label>
                 <input type="text" name="name" class="form-control"/>
-                <?php $frm->validate("name",array("required","label"=>"Theatre Name")); // Validating form using form builder written in form.php ?>
+                <?php $frm->validate("name",array("required","label"=>"Theatre Name")); ?>
               </div>
               <div class="form-group">
                 <label class="control-label">Theatre Address</label>
                 <input type="text" name="address" class="form-control"/>
-                <?php $frm->validate("address",array("required","label"=>"Theatre Address")); // Validating form using form builder written in form.php ?>
+                <?php $frm->validate("address",array("required","label"=>"Theatre Address")); ?>
               </div>
               <div class="form-group">
                 <label class="control-label">Place</label>
                 <!-- <input type="text" name="place" id="autocomplete" class="form-control"> -->
                 <input type="text" name="place" class="form-control">
-                <?php $frm->validate("place",array("required","label"=>"Place")); // Validating form using form builder written in form.php ?>
+                <?php $frm->validate("place",array("required","label"=>"Place")); ?>
               </div>
-              <div class="form-group">
+              <!-- <div class="form-group">
                  <label class="control-label">Divison</label>
                 <input type="text" name="state" id="administrative_area_level_1" s placeholder="Divison" class="form-control">
-                <?php $frm->validate("state",array("required","label"=>"State")); // Validating form using form builder written in form.php ?>
-              </div>
+                <?php 
+                //$frm->validate("state",array("required","label"=>"State"));  
+                ?>
+              </div> -->
               <div class="form-group">
                 <label class="control-label">Postal Code</label>
                  <input type="text" name="pin" id="postal_code"s placeholder="Postal code" class="form-control">
-                 <?php $frm->validate("pin",array("required","label"=>"Pin Code","regexp"=>"pin")); // Validating form using form builder written in form.php ?>
+                 <?php $frm->validate("pin",array("required","label"=>"Pin Code","regexp"=>"pin"));  ?>
               </div>
               <?php
                 start:

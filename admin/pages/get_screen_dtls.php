@@ -5,7 +5,7 @@
     {
   ?>
     <table class="table table-bordered table-hover">
-      <th class="col-md-1">Slno</th>
+      <th class="col-md-1">Sl no</th>
       <th class="col-md-3">Screen Name</th>
       <th class="col-md-1">Seats</th>
       <th class="col-md-1">Charge</th>
