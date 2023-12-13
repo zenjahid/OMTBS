@@ -134,12 +134,11 @@ class formBuilder
                     $err_msg="Enter a valid $label";
                     break;
                 case "phone":
-                    // $expression='/^[0-9]\d{2,4}-\d{6,8}$/';
                     $expression='/(^(\+88|88)?(01){1}[3456789]{1}(\d){8})$/';
                     $err_msg="Enter a valid $label";
                     break;
                 case "number":
-                    $expression='/^[0-9 ]+$/';
+                    $expression='/(^(\+88|88)?(01){1}[3456789]{1}(\d){8})$/';
                     $err_msg="Enter a valid $label";
                     break;
                 case "text":
