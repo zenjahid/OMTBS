@@ -6,7 +6,7 @@ include('header.php');
 <script type="text/javascript" src="../../validation/dist/js/bootstrapValidator.js"></script>
   <!-- =============================================== -->
   <?php
-    include('../../form.php');
+    require('../../form.php');
     $frm=new formBuilder;      
   ?>   
   <!-- =============================================== -->
@@ -72,7 +72,7 @@ include('header.php');
     <!-- /.content -->
   </div>
   <?php
-include('footer.php');
+require('footer.php');
 ?>
 <script>
         <?php $frm->applyvalidations("form1");?>
