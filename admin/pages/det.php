@@ -40,41 +40,7 @@ include('header.php');
     $profit = ($profit_percentage / 100) * $total_amount;
 
 ?>
- <!--
- 
-    <div class="row">
-      <div class="column" style="background-color:#aaa;">
-      <img src="admin.png" alt="" width="40" height="40" border-radius="50%">
-        USER:
-        <span id="user_count"><?php echo $user_count; ?></span>
-      </div>
-      <div class="column" style="background-color:#bbb;" padding-top="20">
-      <i class="fa fa-ticket" width="40" height="200" aria-hidden=""></i>
-        THEATERS:
-        <span id="theatre_count"><?php echo $theatre_count; ?></span>
-      </div>
-      <div class="column" style="background-color:#ccc;">
-      <img src="admin.png" alt="" width="40" height="40" border-radius="50%">
-        BOOKING:
-        <span id="booking_count"><?php echo $booking_count; ?></span>
-      </div>
-      <div class="column" style="background-color:#ddd;">
-      <img src="admin.png" alt="" width="40" height="40" border-radius="50%">
-        CONTACT:
-        <span id="contact_count"><?php echo $contact_count; ?></span>
-      </div>
-      <div class="column" style="background-color:#eee;">
-        <img src="admin.png" alt="" width="40" height="40" border-radius="50%">
-        MOVIES:
-        <span id="movies_count"><?php echo $movie_count; ?></span>
-      </div>
-      <div class="column" style="background-color:#fff;">
-        <img src="admin.png" alt="" width="40" height="40" border-radius="50%">
-        PROFIT:
-        <span id="movies_count"><?php echo $profit; ?> TK</span>
-      </div>
-    </div>
- -->
+
   <div>
 
     <label for="user" >
@@ -82,13 +48,10 @@ include('header.php');
         <div>USER:</div>
         <div align-items="center"><span id="user_count"><?php echo $user_count; ?></span></div>
     </label>
-    
-
-    <!-- <br> -->
-
+  
     <label for="theatre">
          <img src="theatre.png" alt="" width="40" height="40" object-fit="cover;" border-radius="50%">
-        <!-- <i class="fa fa-ticket" width="170" height="170" aria-hidden=""></i>-->
+        
         <div>THEATERS:</div>
        <div><span id="theatre_count"><?php echo $theatre_count; ?></span></div>    
       </label>

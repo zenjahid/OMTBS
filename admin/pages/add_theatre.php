@@ -4,7 +4,6 @@ include('header.php');
 <link rel="stylesheet" href="../../validation/dist/css/bootstrapValidator.css"/>
     
 <script type="text/javascript" src="../../validation/dist/js/bootstrapValidator.js"></script>
-  <!-- =============================================== -->
   <?php
     include('../../form.php');
     $frm=new formBuilder;      
@@ -42,17 +41,10 @@ include('header.php');
               </div>
               <div class="form-group">
                 <label class="control-label">Place</label>
-                <!-- <input type="text" name="place" id="autocomplete" class="form-control"> -->
                 <input type="text" name="place" class="form-control">
                 <?php $frm->validate("place",array("required","label"=>"Place")); ?>
               </div>
-              <!-- <div class="form-group">
-                 <label class="control-label">Divison</label>
-                <input type="text" name="state" id="administrative_area_level_1" s placeholder="Divison" class="form-control">
-                <?php 
-                //$frm->validate("state",array("required","label"=>"State"));  
-                ?>
-              </div> -->
+              </div>
               <div class="form-group">
                 <label class="control-label">Postal Code</label>
                  <input type="text" name="pin" id="postal_code"s placeholder="Postal code" class="form-control">

@@ -84,13 +84,11 @@ CREATE TABLE `tbl_login` (
 
 INSERT INTO `tbl_login` (`id`, `user_id`, `username`, `password`, `user_type`) VALUES
 (1, 0, 'admin', 'password', 0),
-(2, 3, 'theatre', 'password', 1),
-(3, 4, 'theatre2', 'password', 1),
 (12, 2, 'hridoy@gmail.com', 'password', 2),
-(15, 14, 'USR295127', 'PWD195747', 1),
+(2, 3, 'star', 'star', 1),
 (17, 4, 'alvi@gmail.com', 'password', 2),
-(18, 6, 'THR760801', 'PWD649976', 1),
-(19, 5, 'mou@gmail.com', 'password', 2);
+(19, 5, 'mou@gmail.com', 'password', 2),
+(18, 6, 'balaka', 'balaka', 1);
 
 -- --------------------------------------------------------
 
@@ -278,10 +276,10 @@ CREATE TABLE `tbl_theatre` (
 -- Dumping data for table `tbl_theatre`
 --
 
+
+
 INSERT INTO `tbl_theatre` (`id`, `name`, `address`, `place`, `pin`) VALUES
 (3, 'Star Cineplex', 'Level 8, Bashundhara City 13/3 Ka', 'Panthapath, Tejgaon, Dhaka', 1215),
-(4, 'Sony Square', 'Sony Square, Plot -1, Road - 2, Block - D, Section-2', 'Mirpur, Dhaka', 1216),
-(5, 'Blockbuster Cinemas', 'Jamuna Future Park, Ka-244', 'Pragati Avenue, Dhaka', 1229),
 (6, 'Balaka Cinema Hall', 'P9MP+929, New Market Inside Rd', 'Dhaka', 1205);
 
 --

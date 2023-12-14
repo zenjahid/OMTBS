@@ -1,7 +1,6 @@
 <?php
 include('header.php');
 ?>
-  <!-- =============================================== -->
 
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
@@ -35,17 +34,11 @@ include('header.php');
                         {
                         ?>
                 <li>
-                  <!-- drag handle -->
+
                       <span class="handle">
-                        <i class="fa fa-film"></i>
-                        
+                        <i class="fa fa-film"></i>                
                       </span>
-                  <!-- checkbox -->
-                  <!-- todo text -->
                   <span class="text"><?php echo $c['movie_name'];?></span>
-                  <!-- Emphasis label -->
-                  
-                  <!-- General tools such as edit or delete-->
                   <div class="tools">
                     
                     <button class="fa fa-trash-o" onclick="del(<?php echo $c['movie_id'];?>)"></button>

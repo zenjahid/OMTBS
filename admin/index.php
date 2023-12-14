@@ -26,8 +26,8 @@
   <!-- /.login-logo -->
   <div class="login-box-body">
     <?php session_start();
-    include('../msgbox.php');
-    // require("");
+    require('../msgbox.php');
+    // include("");
     ?>
     <p class="login-box-msg">Please login to start your session</p>
 <form action="pages/process_login.php" method="post">

@@ -1,8 +1,6 @@
 <?php
-include('header.php');
+require('header.php');
 ?>
-  <!-- =============================================== -->
-
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
     <!-- Content Header (Page header) -->
@@ -50,7 +48,7 @@ include('header.php');
                 </tr>
             </table>
         </div> 
-        <!-- /.box-footer-->
+
       </div>
          <div class="box">
          <div class="box-header with-border">
@@ -172,7 +170,7 @@ include('header.php');
               </div>
        </div>
     </section>
-    <!-- /.content -->
+
   </div>
   <?php
 include('footer.php');
@@ -188,21 +186,20 @@ include('footer.php');
 			dataType: 'html'
 		})
 		.done(function(data){
-			//console.log(data);	
 			$('#screendtls').html(data);    
 		})
 		.fail(function(){
 			$('#screendtls').html('<i class="glyphicon glyphicon-info-sign"></i> Something went wrong, Please try again...');
 		  });
   }
-  $(document).ready(function(){ // load dynamic bootstrap model
+  $(document).ready(function(){ 
 	
 	  $(document).on('click', '#getUser', function(e){
 		
   		e.preventDefault();
   		
-  		$('#dynamic-content').html(''); // leave it blank before ajax call
-  		$('#modal-loader').show();      // load ajax loader
+  		$('#dynamic-content').html('');
+      $('#modal-loader').show();
   		
   		$.ajax({
   			url: 'add_screen_form.php',
@@ -213,8 +210,8 @@ include('footer.php');
   		.done(function(data){
   			console.log(data);	
   			$('#dynamic-content').html('');    
-  			$('#dynamic-content').html(data); // load response 
-  			$('#modal-loader').hide();		  // hide ajax loader	
+  			$('#dynamic-content').html(data);  
+  			$('#modal-loader').hide();		  	
   		})
   		.fail(function(){
   			$('#dynamic-content').html('<i class="glyphicon glyphicon-info-sign"></i> Something went wrong, Please try again...');
@@ -278,7 +275,7 @@ $(document).on('click', '#savescreen', function(){
 
 $(document).on('click', '#getUser2', function(e){
 
-    screenid=$(this).data("id");//screen id
+    screenid=$(this).data("id");
 });
 $('#savetime').click(function(){
   s_time=$('#s_time').val();
